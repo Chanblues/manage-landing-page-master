@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <script src="https://kit.fontawesome.com/090e9ec420.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Glide.js Core Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+  <!-- Glide.js(Optional) Theme Stylesheet -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <img src="./images/logo.svg" alt="company logo" id="main_logo">
+
+    <div id="toplink">
+      <div id="nav_toplink">
+        <a href="">Pricing </a>
+        <a href="">Product </a>
+        <a href="">About Us </a>
+        <a href="">Careers </a>
+        <a href="">Community </a>
+      </div>
+    </div>
+
+    <div id="nav_menu" onclick="showMenu()"><img src="./images/icon-hamburger.svg" alt="navigation button"
+        id="nav_menu-img"></div>
+
+    <button class="btn_GET orange">Get Started</button>
+  </nav>
+
+  <!-- First Section -->
+  <section id="product_info">
+    <div id="product_content">
+      <h1> Bring everyone together to build better products. </h1>
+
+      <p>
+        Manage makes it simple for software teams to plan day-to-day
+        tasks while keeping the larger team goals in view.
+      </p>
+
+      <button class="btn_GET orange">Get Started</button>
+    </div>
+    <img src="./images/illustration-intro.svg" alt="">
+  </section>
+
+  <!-- Second Section -->
+  <section id="product_feature">
+    <div id="manage_intro">
+      <h3> What’s different about Manage? </h3>
+
+      <p>
+        Manage provides all the functionality your team needs, without
+        the complexity. Our software is tailor-made for modern digital
+        product teams.
+      </p>
+    </div>
+
+    <div id="manage_infos">
+      <div class="manage_info">
+        <div class="info_points">
+          <button>01</button>
+          <h5> Track company-wide progress </h5>
+        </div>
+        <p>
+          See how your day-to-day tasks fit into the wider vision. Go from
+          tracking progress at the milestone level all the way done to the
+          smallest of details. Never lose sight of the bigger picture again.
+        </p>
+      </div>
+
+      <div class="manage_info">
+        <div class="info_points">
+          <button>02</button>
+          <h5> Advanced built-in reports </h5>
+        </div>
+        <p>
+          Set internal delivery estimates and track progress toward company
+          goals. Our customisable dashboard helps you build out the reports
+          you need to keep key stakeholders informed.
+        </p>
+      </div>
+
+      <div class="manage_info">
+        <div class="info_points">
+          <button>03</button>
+          <h5> Everything you need in one place </h5>
+        </div>
+        <p>
+          Stop jumping from one service to another to communicate, store files,
+          track tasks and share documents. Manage offers an all-in-one team
+          productivity solution.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Third Section -->
+  <section id="user_response">
+    <h3> What they’ve said </h3>
+
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="feeds_card anisha">
+              <h5> Anisha Li </h5>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="feeds_card ali">
+              <h5> Ali Bravo </h5>
+              <p>
+                “We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”
+              </p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="feeds_card richard">
+              <h5> Richard Watts </h5>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="feeds_card shanai">
+              <h5> Shanai Gough </h5>
+              <p>
+                “Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+        <button class="glide__bullet" data-glide-dir="=3"></button>
+        <button class="glide__bullet" data-glide-dir="=4"></button>
+      </div>
+    </div>
+
+    <button class="btn_GET orange">Get Started</button>
+  </section>
+
+  <!-- Fourth Section -->
+  <section id="team_work">
+    <h3> Simplify how your team works today. </h3>
+    <button class="btn_GET white">Get Started</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div id="social_logo">
+      <img src="./images/bottomlogo.svg" alt="company logo">
+      <div>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-youtube-square"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+
+    <div id="bottomnav_box">
+      <div class="bottomnav">
+        <a href="">Home</a>
+        <a href="">Pricing</a>
+        <a href="">Products</a>
+        <a href="">About Us</a>
+      </div>
+
+      <div class="bottomnav">
+        <a href="">Careers</a>
+        <a href="">Community</a>
+        <a href="">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div id="user_log">
+      <form action="" id="user_form">
+        <div id="input_field">
+          <input type="email" name="userinput" aria-label="login for user" placeholder="Updates in your inbox…" id="user_input">
+          <span id="email_error">Please insert a vaid email</span>
+        </div>
+        <button type="submit">Go</button>
+      </form>
+
+      <p> Copyright 2020. All Rights Reserved </p>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Biswanath Marndi</a>.
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+
+  <!-- Glide.js carousel -->
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+  <script>
+    new Glide('.glide', {
+      type: 'carousel',
+      autoplay: 2000,
+      hoverpause: true,
+      perView: 3,
+      gap: 30,
+      peek: -100,
+      breakpoints: {
+        800: {
+          perView: 1,
+          peek: 100
+        },
+        600: {
+          autoplay: false,
+          perView: 1,
+          peek: 0
+        }
+      }
+    }).mount();
+  </script>
+</body>
+
+</html>
